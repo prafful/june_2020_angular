@@ -1,0 +1,14 @@
+.teacher{
+    position: absolute;
+    width: 30%;
+    float: left;
+    background-color: lightcoral;
+}
+
+.teacher1{
+    position: absolute;
+    width: 40%;
+    float: right;
+    margin-left: 440px;
+    background-color: paleturquoise;
+}
