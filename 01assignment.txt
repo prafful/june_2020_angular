@@ -1,0 +1,2 @@
+Modify the FordirComponent component view to display table with heading using ngFor directive. Fields to display include:
+username, city, company name, email

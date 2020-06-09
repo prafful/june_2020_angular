@@ -11,6 +11,11 @@ import { Teacher1Component } from './school/teacher1/teacher1.component';
 import { Student1Component } from './school/student1/student1.component';
 import { Student2Component } from './school/student2/student2.component';
 import { Student3Component } from './school/student3/student3.component';
+import { AlldirectiveComponent } from './directive/alldirective/alldirective.component';
+import { FordirComponent } from './directive/fordir/fordir.component';
+import { IfdirComponent } from './directive/ifdir/ifdir.component';
+import { ClassdirComponent } from './directive/classdir/classdir.component';
+import { StyledirComponent } from './directive/styledir/styledir.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,12 @@ import { Student3Component } from './school/student3/student3.component';
     Teacher1Component,
     Student1Component,
     Student2Component,
-    Student3Component
+    Student3Component,
+    AlldirectiveComponent,
+    FordirComponent,
+    IfdirComponent,
+    ClassdirComponent,
+    StyledirComponent
   ],
   imports: [
     BrowserModule,

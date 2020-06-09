@@ -1,0 +1,7 @@
+Implement two child routes for principal component:
+
+Principal
+
+Teacher								Teacher1
+	
+Student		Student1					Student2	Student3	

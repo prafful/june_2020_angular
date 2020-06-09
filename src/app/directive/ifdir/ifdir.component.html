@@ -1,0 +1,22 @@
+ngIf directive:
+<button (click)="toggleDisplay()">Toggle Display</button>
+<br>
+Display Value: {{ display }}
+<br>
+<div *ngIf="display" style="width: 100px; height: 100px; background-color: bisque;">
+    Hide Me!
+</div>
+ngIf with else scenario:
+br
+ElseDisplay: {{elseDisplay}}
+<button (click)="toggleElseDisplay()">Toggle Else Display</button>
+<div *ngIf="elseDisplay; else otherDisplay" 
+      style="width: 100px; height: 100px; background-color: blue;">
+    Who else????!
+</div>
+
+<ng-template #otherDisplay>
+    <div  style="width: 120px; height: 120px; background-color: purple;">
+        Alien!!!!
+    </div>
+</ng-template>
