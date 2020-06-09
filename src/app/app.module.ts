@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule} from "@angular/forms";
+import { ReactiveFormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { RootComponent } from './app.component';
@@ -16,6 +18,9 @@ import { FordirComponent } from './directive/fordir/fordir.component';
 import { IfdirComponent } from './directive/ifdir/ifdir.component';
 import { ClassdirComponent } from './directive/classdir/classdir.component';
 import { StyledirComponent } from './directive/styledir/styledir.component';
+import { AllComponent } from './forms/all/all.component';
+import { TemplateComponent } from './forms/template/template.component';
+import { ReactiveComponent } from './forms/reactive/reactive.component';
 
 @NgModule({
   declarations: [
@@ -32,11 +37,16 @@ import { StyledirComponent } from './directive/styledir/styledir.component';
     FordirComponent,
     IfdirComponent,
     ClassdirComponent,
-    StyledirComponent
+    StyledirComponent,
+    AllComponent,
+    TemplateComponent,
+    ReactiveComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [RootComponent]

@@ -1,0 +1,20 @@
+<p>reactive works!</p>
+
+<div>
+
+    <form  [formGroup]="personalForm" (ngSubmit)="userAdd(personalForm)">
+        First Name: 
+        <input type="text" formControlName="fname" > {{ fname }}<br> 
+        Last Name:
+        <input type="text" formControlName="lname" >  {{lname}} <br>
+        Hobby:
+        <select name="hobby" formControlName="hobby"  >
+            <option value="hacking">Hacking</option>
+            <option value="cyberforensic">Cyber Forensic</option>
+            <option value="aiml">AI and ML</option>
+        </select>
+        {{hobby}}
+        <br>
+        <button type="submit" [disabled]="!personalForm.valid">Add</button>
+    </form>
+</div>

@@ -7,6 +7,9 @@ import { FordirComponent } from './directive/fordir/fordir.component';
 import { IfdirComponent } from './directive/ifdir/ifdir.component';
 import { ClassdirComponent } from './directive/classdir/classdir.component';
 import { StyledirComponent } from './directive/styledir/styledir.component';
+import { AllComponent } from './forms/all/all.component';
+import { TemplateComponent } from './forms/template/template.component';
+import { ReactiveComponent } from './forms/reactive/reactive.component';
 
 
 const routes: Routes = [
@@ -47,6 +50,20 @@ const routes: Routes = [
       {
         path:'styledir',
         component:StyledirComponent
+      }
+    ]
+  },
+  {
+    path:'allforms',
+    component:AllComponent,
+    children:[
+      {
+        path:'template',
+        component:TemplateComponent
+      },
+      {
+        path:'reactive',
+        component:ReactiveComponent
       }
     ]
   }

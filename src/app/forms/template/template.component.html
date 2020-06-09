@@ -1,0 +1,19 @@
+<p>template works!</p>
+<div>
+
+    <form  #personalForm="ngForm" (ngSubmit)="userAdd(personalForm)">
+        First Name: 
+        <input type="text" name="fname" [(ngModel)]="firstname" required> {{ firstname }}<br> 
+        Last Name:
+        <input type="text" name="lname" [(ngModel)]="lastname" required>  {{lastname}} <br>
+        Hobby:
+        <select name="hobby" [(ngModel)]="hobby" required>
+            <option value="hacking">Hacking</option>
+            <option value="cyberforensic">Cyber Forensic</option>
+            <option value="aiml">AI and ML</option>
+        </select>
+        {{hobby}}
+        <br>
+        <button type="submit" [disabled]="!personalForm.valid">Add</button>
+    </form>
+</div>
