@@ -1,0 +1,27 @@
+<p>inbuilt works!</p>
+
+Message: {{ message }}
+<br>
+Message (uppercase): {{ message | uppercase }}
+<br>
+Message (lowercase): {{ message | lowercase }}
+<br>
+Message (titlecase): {{ message | titlecase }}
+<br>
+Birthday: {{birthday}}
+<br>
+Birthday (date) :{{ birthday | date }}
+<br>
+Birthday (date:'fullDate') :{{ birthday | date:'fullDate' | uppercase }}
+<br>
+Birthday (date:'shortDate') :{{ birthday | date:'shortDate' }}
+<br>
+Birthday (date:'yyyy') :{{ birthday | date:'yyyy' }}
+<br>
+Salary: {{salary}}
+<br>
+Salary (currency): {{salary | currency}}
+<br>
+Salary (currency:'INR'): {{salary | currency:'INR'}}
+<br>
+Salary (currency:'JPY'): {{salary | currency:'JPY'}}

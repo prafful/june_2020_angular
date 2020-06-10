@@ -21,6 +21,14 @@ import { StyledirComponent } from './directive/styledir/styledir.component';
 import { AllComponent } from './forms/all/all.component';
 import { TemplateComponent } from './forms/template/template.component';
 import { ReactiveComponent } from './forms/reactive/reactive.component';
+import { AllpipeComponent } from './pipes/allpipe/allpipe.component';
+import { InbuiltComponent } from './pipes/inbuilt/inbuilt.component';
+import { CustomComponent } from './pipes/custom/custom.component';
+import { SortstringarrayPipe } from './custompipes/sortstringarray.pipe';
+import { ConsumeallComponent } from './consume/consumeall/consumeall.component';
+import { LocaloneComponent } from './consume/localone/localone.component';
+import { LocaltwoComponent } from './consume/localtwo/localtwo.component';
+import { RemoteComponent } from './consume/remote/remote.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +48,15 @@ import { ReactiveComponent } from './forms/reactive/reactive.component';
     StyledirComponent,
     AllComponent,
     TemplateComponent,
-    ReactiveComponent
+    ReactiveComponent,
+    AllpipeComponent,
+    InbuiltComponent,
+    CustomComponent,
+    SortstringarrayPipe,
+    ConsumeallComponent,
+    LocaloneComponent,
+    LocaltwoComponent,
+    RemoteComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,13 @@ import { StyledirComponent } from './directive/styledir/styledir.component';
 import { AllComponent } from './forms/all/all.component';
 import { TemplateComponent } from './forms/template/template.component';
 import { ReactiveComponent } from './forms/reactive/reactive.component';
+import { AllpipeComponent } from './pipes/allpipe/allpipe.component';
+import { InbuiltComponent } from './pipes/inbuilt/inbuilt.component';
+import { CustomComponent } from './pipes/custom/custom.component';
+import { ConsumeallComponent } from './consume/consumeall/consumeall.component';
+import { LocaloneComponent } from './consume/localone/localone.component';
+import { LocaltwoComponent } from './consume/localtwo/localtwo.component';
+import { RemoteComponent } from './consume/remote/remote.component';
 
 
 const routes: Routes = [
@@ -64,6 +71,38 @@ const routes: Routes = [
       {
         path:'reactive',
         component:ReactiveComponent
+      }
+    ]
+  },
+  {
+    path:'allpipe',
+    component:AllpipeComponent,
+    children:[
+      {
+        path:'inbuilt',
+        component:InbuiltComponent
+      },
+      {
+        path:'custom',
+        component:CustomComponent
+      }
+    ]
+  },
+  {
+    path:'service',
+    component:ConsumeallComponent,
+    children:[
+      {
+        path:'localone',
+        component:LocaloneComponent
+      },
+      {
+        path:'localtwo',
+        component:LocaltwoComponent
+      },
+      {
+        path:'remote',
+        component:RemoteComponent
       }
     ]
   }
