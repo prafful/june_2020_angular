@@ -17,6 +17,7 @@ import { ConsumeallComponent } from './consume/consumeall/consumeall.component';
 import { LocaloneComponent } from './consume/localone/localone.component';
 import { LocaltwoComponent } from './consume/localtwo/localtwo.component';
 import { RemoteComponent } from './consume/remote/remote.component';
+import { AddfriendComponent } from './consume/addfriend/addfriend.component';
 
 
 const routes: Routes = [
@@ -105,6 +106,10 @@ const routes: Routes = [
         component:RemoteComponent
       }
     ]
+  },
+  {
+    path:'addfriend',
+    component:AddfriendComponent
   }
 ];
 

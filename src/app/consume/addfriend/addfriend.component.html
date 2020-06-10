@@ -1,0 +1,14 @@
+<p>addfriend works!</p>
+
+<br>
+<form #friendForm="ngForm" (ngSubmit)="addFriendViaAPI(friendForm)">
+
+    Name: <input type="text" name="name" [(ngModel)]="name"> <br>
+    Email: <input type="email" name="email" [(ngModel)]="email"> <br>
+    Username: <input type="text" name="username" [(ngModel)]="username"> <br>
+    <button type="submit">Add</button>
+</form>
+
+ <br><br><br>
+
+ <button (click)="goToShowAllFriends()">Back</button>

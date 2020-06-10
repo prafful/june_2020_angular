@@ -1,0 +1,46 @@
+{
+  "allfriends": [
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "Sincere@april.biz"
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "username": "Antonette",
+      "email": "Shanna@melissa.tv"
+    },
+    {
+      "name": "Abra San",
+      "username": "abra",
+      "email": "abra@san.com",
+      "id": 3
+    },
+    {
+      "name": "MikaYuko San",
+      "username": "mikayuko",
+      "email": "yuko@san.com",
+      "id": 4
+    },
+    {
+      "name": null,
+      "email": null,
+      "username": null,
+      "id": 5
+    },
+    {
+      "name": "OBBOsdf",
+      "email": "obb@sdf.com",
+      "username": "obbsdf",
+      "id": 6
+    },
+    {
+      "name": "pd",
+      "email": "pd@gmail.com",
+      "username": "pdpdpd",
+      "id": 7
+    }
+  ]
+}

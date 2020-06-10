@@ -1,1 +1,32 @@
 <p>remote works!</p>
+
+Users from Rest API:
+<button (click)="goToAddFriendPage()">Add</button>
+<table border="1">
+
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Username</th>
+            <th colspan="2">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td> {{ user.id }}</td>
+            <td> {{ user.name}} </td>
+            <td> {{ user.email }} </td>
+            <td> {{ user.username }} </td>
+            <td>
+                <button>Edit</button>
+            </td>
+            <td>
+                <button>Delete</button>
+            </td>
+        </tr>
+    </tbody>
+
+    
+</table>
