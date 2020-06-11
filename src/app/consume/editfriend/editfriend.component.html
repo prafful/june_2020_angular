@@ -1,0 +1,10 @@
+<p>editfriend works!</p>
+<h1>Edit friend with id: {{editId}}</h1>
+
+<form #friendForm="ngForm" (ngSubmit)="editFriendViaAPI(friendForm)">
+    Id: {{editId}} <br>
+    Name: <input type="text" name="name" [(ngModel)]="name" required> {{name}}  <br>
+    Email: <input type="email" name="email" [(ngModel)]="email" required> {{email}} <br>
+    Username: <input type="text" name="username" [(ngModel)]="username" required> {{username}} <br>
+    <button type="submit" [disabled]="friendForm.invalid">Edit</button>
+</form>

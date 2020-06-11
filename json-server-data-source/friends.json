@@ -1,10 +1,10 @@
 {
   "allfriends": [
     {
-      "id": 1,
-      "name": "Leanne Graham",
+      "name": "Leanne ",
+      "email": "leanne@april.biz",
       "username": "Bret",
-      "email": "Sincere@april.biz"
+      "id": 1
     },
     {
       "id": 2,
@@ -25,21 +25,9 @@
       "id": 4
     },
     {
-      "name": null,
-      "email": null,
-      "username": null,
-      "id": 5
-    },
-    {
-      "name": "OBBOsdf",
-      "email": "obb@sdf.com",
-      "username": "obbsdf",
-      "id": 6
-    },
-    {
-      "name": "pd",
-      "email": "pd@gmail.com",
-      "username": "pdpdpd",
+      "name": "Prafful Daga",
+      "email": "prraful@gmail.com",
+      "username": "prafful",
       "id": 7
     }
   ]

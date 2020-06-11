@@ -14,10 +14,10 @@ export class RemoteComponent implements OnInit {
   constructor(private restapi:RestapiService, private router:Router) { }
 
   ngOnInit(): void {
-    this.getRemotUsers()
+    this.getRemoteUsers()
   }
 
-  getRemotUsers(){
+  getRemoteUsers(){
     //this.restapi.getAllUsers().subscribe(this.successHandler, this.errorHandler)
 
     this.restapi.getAllFriends()
@@ -31,6 +31,18 @@ export class RemoteComponent implements OnInit {
 
   goToAddFriendPage(){
     this.router.navigate(['addfriend'])
+  }
+
+  findAndDeleteFriendById(id){
+    this.restapi.deleteFriend(id)
+                .subscribe(res =>{
+                  console.log(res)
+                  this.getRemoteUsers()
+                }, err=>{})
+  }
+
+  findAndEditFriendById(id){
+    this.router.navigate(['editfriend', id])
   }
 
 /*   successHandler(response){

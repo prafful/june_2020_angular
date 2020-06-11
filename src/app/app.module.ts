@@ -31,6 +31,7 @@ import { LocaloneComponent } from './consume/localone/localone.component';
 import { LocaltwoComponent } from './consume/localtwo/localtwo.component';
 import { RemoteComponent } from './consume/remote/remote.component';
 import { AddfriendComponent } from './consume/addfriend/addfriend.component';
+import { EditfriendComponent } from './consume/editfriend/editfriend.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { AddfriendComponent } from './consume/addfriend/addfriend.component';
     LocaloneComponent,
     LocaltwoComponent,
     RemoteComponent,
-    AddfriendComponent
+    AddfriendComponent,
+    EditfriendComponent
   ],
   imports: [
     BrowserModule,

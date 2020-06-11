@@ -20,10 +20,10 @@ Users from Rest API:
             <td> {{ user.email }} </td>
             <td> {{ user.username }} </td>
             <td>
-                <button>Edit</button>
+                <button (click)="findAndEditFriendById(user.id)">Edit</button>
             </td>
             <td>
-                <button>Delete</button>
+                <button (click)="findAndDeleteFriendById(user.id)">Delete</button>
             </td>
         </tr>
     </tbody>

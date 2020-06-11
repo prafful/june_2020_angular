@@ -25,7 +25,11 @@ export class RestapiService {
   }
 
   deleteFriend(id){
-    return this.http.delete('http://localhost:3000/allfriends')
+    return this.http.delete('http://localhost:3000/allfriends'+'/'+id)
+  }
+
+  getFriendById(id){
+    return this.http.get('http://localhost:3000/allfriends'+'/'+id)
   }
 
 
