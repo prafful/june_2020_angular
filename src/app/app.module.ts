@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule} from "@angular/forms";
 import { ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { AppRoutingModule } from './app-routing.module';
 import { RootComponent } from './app.component';
@@ -32,6 +33,7 @@ import { LocaltwoComponent } from './consume/localtwo/localtwo.component';
 import { RemoteComponent } from './consume/remote/remote.component';
 import { AddfriendComponent } from './consume/addfriend/addfriend.component';
 import { EditfriendComponent } from './consume/editfriend/editfriend.component';
+import { TextanimateComponent } from './animation/textanimate/textanimate.component';
 
 @NgModule({
   declarations: [
@@ -61,14 +63,16 @@ import { EditfriendComponent } from './consume/editfriend/editfriend.component';
     LocaltwoComponent,
     RemoteComponent,
     AddfriendComponent,
-    EditfriendComponent
+    EditfriendComponent,
+    TextanimateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [RootComponent]
