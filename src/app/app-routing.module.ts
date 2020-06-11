@@ -20,6 +20,7 @@ import { RemoteComponent } from './consume/remote/remote.component';
 import { AddfriendComponent } from './consume/addfriend/addfriend.component';
 import { EditfriendComponent } from './consume/editfriend/editfriend.component';
 import { TextanimateComponent } from './animation/textanimate/textanimate.component';
+import { ParentComponent } from './eventbinding/parent/parent.component';
 
 
 const routes: Routes = [
@@ -120,6 +121,10 @@ const routes: Routes = [
   {
     path:'animate',
     component:TextanimateComponent
+  },
+  {
+    path:'event',
+    component:ParentComponent
   }
 ];
 

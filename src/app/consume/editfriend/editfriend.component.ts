@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { RestapiService } from 'src/app/services/restapi.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'cts-editfriend',

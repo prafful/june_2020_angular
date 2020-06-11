@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -28,9 +29,10 @@ export class RestapiService {
     return this.http.delete('http://localhost:3000/allfriends'+'/'+id)
   }
 
-  getFriendById(id){
+  getFriendById=(id):Observable<any>=>{
     return this.http.get('http://localhost:3000/allfriends'+'/'+id)
   }
 
+ 
 
 }
